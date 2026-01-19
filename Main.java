@@ -2,6 +2,8 @@ public class Main {
 
     public static void main(String[] args) {
         // Ejercicio 1.1 >>>
+        System.out.println("");
+        System.out.println("Ejercicio 1.1");
         ClasePrint datos = new ClasePrint("nash juan", 10004129, "Ingeniería en Sistemas");
         datos.mostrarDatos(); 
 
@@ -27,6 +29,10 @@ public class Main {
         */ 
 
         // Ejercicio 1.4
-        
+        System.out.println("");
+        System.out.println("Ejercicio 1.4");
+        ClaseRectangulo rectangulo = new ClaseRectangulo(5, 3);
+        rectangulo.AreaRectangulo();
+
     }
 }
