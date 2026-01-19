@@ -34,5 +34,11 @@ public class Main {
         ClaseRectangulo rectangulo = new ClaseRectangulo(5, 3);
         rectangulo.AreaRectangulo();
 
+
+        // Ejercicio 1.5 
+        System.out.println("");
+        System.out.println("Ejercicio 1.5");
+        ClaseMultiples multiples = new ClaseMultiples("ucne", "2026-1", "Programacion 3 o Arquitectura del computador" , "Nunca te rindas");
+        multiples.mostrarMultiples();
     }
 }
