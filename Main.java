@@ -127,6 +127,7 @@ public class Main {
         System.out.println("Double: " + d + ", Int: " + i);
         
         // Capitulo 3
+
         //Ejercicio 3.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         System.out.println("");
         System.out.println("Ejercicio 3.1");
@@ -153,6 +154,68 @@ public class Main {
         } else {
             System.out.println("El estudiante REPROBO");
         }
+        
+        // Ejercicio 3.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        System.out.println("");
+        System.out.println("Ejercicio 3.2");
+        
+        int option;
+        do {
+            // Mostrar menú
+            System.out.println("\n=== Calculadora Menu ===");
+            System.out.println("1. Sumar dos numeros");
+            System.out.println("2. Restar dos numeros");
+            System.out.println("3. Multiplicar dos numeros");
+            System.out.println("4. Dividir dos numeros");
+            System.out.println("5. Salir");
+            System.out.print("Elige una opcion (1-5): ");
+            option = sc.nextInt();
+            
+            switch (option) {
+                case 1:
+                    System.out.print("Ingresa el primer numero: ");
+                    double numero1 = sc.nextDouble();
+                    System.out.print("Ingresa el segundo numero: ");
+                    double numero2 = sc.nextDouble();
+                    System.out.println("Resultado: " + numero1 + " + " + numero2 + " = " + (num1 + num2));
+                    break;
+                    
+                case 2:
+                    System.out.print("Ingresa el primer numero: ");
+                    double num3 = sc.nextDouble();
+                    System.out.print("Ingresa el segundo numero: ");
+                    double num4 = sc.nextDouble();
+                    System.out.println("Resultado: " + num3 + " - " + num4 + " = " + (num3 - num4));
+                    break;
+                    
+                case 3:
+                    System.out.print("Ingresa el primer numero: ");
+                    double num5 = sc.nextDouble();
+                    System.out.print("Ingresa el segundo numero: ");
+                    double num6 = sc.nextDouble();
+                    System.out.println("Resultado: " + num5 + " * " + num6 + " = " + (num5 * num6));
+                    break;
+                    
+                case 4:
+                    System.out.print("Ingresa el primer numero: ");
+                    double num7 = sc.nextDouble();
+                    System.out.print("Ingresa el segundo numero: ");
+                    double num8 = sc.nextDouble();
+                    if (num8 != 0) {
+                        System.out.println("Resultado: " + num7 + " / " + num8 + " = " + (num7 / num8));
+                    } else {
+                        System.out.println("Error: No se puede dividir por cero");
+                    }
+                    break;
+                    
+                case 5:
+                    System.out.println("¡Gracias por usar la calculadora! Hasta luego.");
+                    break;
+                    
+                default:
+                    System.out.println("Opcion no valida. Por favor elige una opcion del 1 al 5.");
+            }
+        } while (option != 5);
         
     }
 }
