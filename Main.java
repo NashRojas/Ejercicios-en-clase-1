@@ -177,7 +177,7 @@ public class Main {
                     double numero1 = sc.nextDouble();
                     System.out.print("Ingresa el segundo numero: ");
                     double numero2 = sc.nextDouble();
-                    System.out.println("Resultado: " + numero1 + " + " + numero2 + " = " + (num1 + num2));
+                    System.out.println("Resultado: " + numero1 + " + " + numero2 + " = " + (numero1 + numero2));
                     break;
                     
                 case 2:
@@ -225,8 +225,8 @@ public class Main {
         int num = sc.nextInt();
         
         System.out.println("\nTabla de multiplicar del " + num + ":");
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(num + " x " + i + " = " + (num * i));
+        for (int j = 1; j <= 10; j++) {
+            System.out.println(num + " x " + j + " = " + (num * j));
         }
         
         // Ejercicio 3.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
