@@ -217,5 +217,19 @@ public class Main {
             }
         } while (option != 5);
         
+
+        // Ejercicio 3.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        System.out.println("");
+        System.out.println("Ejercicio 3.3");
+        System.out.print("Ingresa un numero para ver su tabla de multiplicar: ");
+        int num = sc.nextInt();
+        
+        System.out.println("\nTabla de multiplicar del " + num + ":");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + " x " + i + " = " + (num * i));
+        }
+        
+        
+
     }
 }
