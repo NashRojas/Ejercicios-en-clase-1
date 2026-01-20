@@ -40,5 +40,31 @@ public class Main {
         System.out.println("Ejercicio 1.5");
         ClaseMultiples multiples = new ClaseMultiples("ucne", "2026-1", "Programacion 3 o Arquitectura del computador" , "Nunca te rindas");
         multiples.mostrarMultiples();
+
+        // cap 2
+
+        // Ejercicio 2.1
+        System.out.println("");
+        System.out.println("Ejercicio 2.1");
+        byte ejemploByte = 127;
+        short ejemploShort = 32000;
+        int ejemploInt = 100000;
+        long ejemploLong = 1000000L;
+        float ejemploFloat = 3.14f;
+        double ejemploDouble = 3.141592;
+        char ejemploChar = 'A';
+        boolean ejemploBoolean = true;
+
+        System.out.println("byte: " + ejemploByte);
+        System.out.println("short: " + ejemploShort);
+        System.out.println("int: " + ejemploInt);
+        System.out.println("long: " + ejemploLong);
+        System.out.println("float: " + ejemploFloat);
+        System.out.println("double: " + ejemploDouble);
+        System.out.println("char: " + ejemploChar);
+        System.out.println("boolean: " + ejemploBoolean);
+        
+        // Ejercicio 2.2
+        
     }
 }
