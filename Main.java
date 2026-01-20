@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // Ejercicio 1.1 >>>
+        // Ejercicio 1.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         System.out.println("");
         System.out.println("Ejercicio 1.1");
         ClasePrint datos = new ClasePrint("nash juan", 10004129, "Ingeniería en Sistemas");
         datos.mostrarDatos(); 
 
-        // Ejercicio 1.2 >>
+        // Ejercicio 1.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         /* el codigo de mas arriba para ser un ejercicio 'simple' decidi clearle una clase. 
         y dentro de esa clase decidi crearle una funcion llamada mostrar datos.
          */
@@ -18,7 +18,7 @@ public class Main {
         y una funcion dedicada a Imprimir los datos que va a recibir en el Main instanciando primero la clase 
         y luego agregando los datos. */
 
-        // Ejercicio 1.3
+        // Ejercicio 1.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         /* 
         public class Ejercicio {
@@ -30,14 +30,14 @@ public class Main {
         }
         */ 
 
-        // Ejercicio 1.4
+        // Ejercicio 1.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         System.out.println("");
         System.out.println("Ejercicio 1.4");
         ClaseRectangulo rectangulo = new ClaseRectangulo(5, 3);
         rectangulo.AreaRectangulo();
 
 
-        // Ejercicio 1.5 
+        // Ejercicio 1.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         System.out.println("");
         System.out.println("Ejercicio 1.5");
         ClaseMultiples multiples = new ClaseMultiples("ucne", "2026-1", "Programacion 3 o Arquitectura del computador" , "Nunca te rindas");
@@ -45,7 +45,7 @@ public class Main {
 
         // cap 2
 
-        // Ejercicio 2.1
+        // Ejercicio 2.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         System.out.println("");
         System.out.println("Ejercicio 2.1");
         byte ejemploByte = 127;
@@ -66,27 +66,27 @@ public class Main {
         System.out.println("char: " + ejemploChar);
         System.out.println("boolean: " + ejemploBoolean);
         
-        // Ejercicio 2.2
+        // Ejercicio 2.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         System.out.println("");
         System.out.println("Ejercicio 2.2");
         Scanner sc = new Scanner(System.in);
-        System.out.print("Ingresa el primer número: ");
+        System.out.print("Ingresa el primer numero: ");
         int num1 = sc.nextInt();
-        System.out.print("Ingresa el segundo número: ");
+        System.out.print("Ingresa el segundo numero: ");
         int num2 = sc.nextInt();
 
         System.out.println("Suma: " + (num1 + num2));
         System.out.println("Resta: " + (num1 - num2));
-        System.out.println("Multiplicación: " + (num1 * num2));
-        System.out.println("División: " + (num1 / num2));
-        System.out.println("Módulo: " + (num1 % num2));
+        System.out.println("Multiplicacion: " + (num1 * num2));
+        System.out.println("Division: " + (num1 / num2));
+        System.out.println("Modulo: " + (num1 % num2));
 
-        // Ejercicio 2.3
+        // Ejercicio 2.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         System.out.println("");
         System.out.println("Ejercicio 2.3");
         System.out.println("1. Celsius a Fahrenheit");
         System.out.println("2. Fahrenheit a Celsius");
-        System.out.print("Elige una opción: ");
+        System.out.print("Elige una opcion: ");
         int opcion = sc.nextInt();
 
         if (opcion == 1) {
@@ -101,7 +101,14 @@ public class Main {
             System.out.println("Celsius: " + celsius);
         }
 
-        // Ejercicio 2.4
-        
+        // Ejercicio 2.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        System.out.println("");
+        System.out.println("Ejercicio 2.4");
+        System.out.print("Ingresa el radio del circulo: ");
+        double radio = sc.nextDouble();
+        ClaseCirculo circulo = new ClaseCirculo(radio);
+        circulo.calcularArea();
+        circulo.calcularPerimetro();
+
     }
 }
