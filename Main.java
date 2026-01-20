@@ -110,5 +110,22 @@ public class Main {
         circulo.calcularArea();
         circulo.calcularPerimetro();
 
+        // ejercicio 2.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        System.out.println("");
+        System.out.println("Ejercicio 2.5");
+        
+        // Conversion implicita (tipo int a double)
+        int entero = 10;
+        double decimal = entero;  
+        System.out.println("Conversion implicita:");
+        System.out.println("Entero: " + entero + ", Decimal: " + decimal);
+        
+        // Conversion explicita (tipo double a int)
+        double d = 9.7;
+        int i = (int) d;  
+        System.out.println("Conversion explicita:");
+        System.out.println("Double: " + d + ", Int: " + i);
+        
+        
     }
 }
