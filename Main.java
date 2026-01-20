@@ -81,5 +81,27 @@ public class Main {
         System.out.println("División: " + (num1 / num2));
         System.out.println("Módulo: " + (num1 % num2));
 
+        // Ejercicio 2.3
+        System.out.println("");
+        System.out.println("Ejercicio 2.3");
+        System.out.println("1. Celsius a Fahrenheit");
+        System.out.println("2. Fahrenheit a Celsius");
+        System.out.print("Elige una opción: ");
+        int opcion = sc.nextInt();
+
+        if (opcion == 1) {
+            System.out.print("Ingresa Celsius: ");
+            double celsius = sc.nextDouble();
+            double fahrenheit = (celsius * 9/5) + 32;
+            System.out.println("Fahrenheit: " + fahrenheit);
+        } else if (opcion == 2) {
+            System.out.print("Ingresa Fahrenheit: ");
+            double fahrenheit = sc.nextDouble();
+            double celsius = (fahrenheit - 32) * 5/9;
+            System.out.println("Celsius: " + celsius);
+        }
+
+        // Ejercicio 2.4
+        
     }
 }
