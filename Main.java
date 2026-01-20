@@ -161,7 +161,7 @@ public class Main {
         
         int option;
         do {
-            // Mostrar menú
+            
             System.out.println("\n=== Calculadora Menu ===");
             System.out.println("1. Sumar dos numeros");
             System.out.println("2. Restar dos numeros");
@@ -218,7 +218,7 @@ public class Main {
         } while (option != 5);
         
 
-        // Ejercicio 3.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // Ejercicio 3.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         System.out.println("");
         System.out.println("Ejercicio 3.3");
         System.out.print("Ingresa un numero para ver su tabla de multiplicar: ");
@@ -229,7 +229,7 @@ public class Main {
             System.out.println(num + " x " + i + " = " + (num * i));
         }
         
-        // Ejercicio 3.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // Ejercicio 3.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         System.out.println("");
         System.out.println("Ejercicio 3.4");
         System.out.print("Ingresa un numero para verificar si es primo: ");
@@ -252,6 +252,28 @@ public class Main {
             System.out.println("El numero " + numeroPrimo + " ES primo.");
         } else {
             System.out.println("El numero " + numeroPrimo + " NO es primo.");
+        }
+        
+        // Ejercicio 3.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        System.out.println("");
+        System.out.println("Ejercicio 3.5");
+        System.out.print("Ingresa el numero de lineas para el patron: ");
+        int lineas = sc.nextInt();
+        
+        System.out.println("\nPatron Normal:");
+        for (int fila = 1; fila <= lineas; fila++) {
+            for (int asterisco = 1; asterisco <= fila; asterisco++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println("\nPatron Invertido:");
+        for (int fila = lineas; fila >= 1; fila--) {
+            for (int asterisco = 1; asterisco <= fila; asterisco++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
         
     }
