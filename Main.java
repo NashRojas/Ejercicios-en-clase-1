@@ -209,7 +209,7 @@ public class Main {
                     break;
                     
                 case 5:
-                    System.out.println("¡Gracias por usar la calculadora! Hasta luego.");
+                    System.out.println("Gracias por usar la calculadora! Hasta luego.");
                     break;
                     
                 default:
@@ -229,7 +229,30 @@ public class Main {
             System.out.println(num + " x " + i + " = " + (num * i));
         }
         
+        // Ejercicio 3.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        System.out.println("");
+        System.out.println("Ejercicio 3.4");
+        System.out.print("Ingresa un numero para verificar si es primo: ");
+        int numeroPrimo = sc.nextInt();
         
-
+        boolean esPrimo = true;
+        
+        if (numeroPrimo < 2) {
+            esPrimo = false;
+        } else {
+            for (int divisor = 2; divisor < numeroPrimo; divisor++) {
+                if (numeroPrimo % divisor == 0) {
+                    esPrimo = false;
+                    break;
+                }
+            }
+        }
+        
+        if (esPrimo) {
+            System.out.println("El numero " + numeroPrimo + " ES primo.");
+        } else {
+            System.out.println("El numero " + numeroPrimo + " NO es primo.");
+        }
+        
     }
 }
