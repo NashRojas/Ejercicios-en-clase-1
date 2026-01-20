@@ -126,6 +126,33 @@ public class Main {
         System.out.println("Conversion explicita:");
         System.out.println("Double: " + d + ", Int: " + i);
         
+        // Capitulo 3
+        //Ejercicio 3.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        System.out.println("");
+        System.out.println("Ejercicio 3.1");
+        System.out.print("Ingresa la calificacion (0-100): ");
+        double calificacion = sc.nextDouble();
+        
+        char letra;
+        if (calificacion >= 90 && calificacion <= 100) {
+            letra = 'A';
+        } else if (calificacion >= 80) {
+            letra = 'B';
+        } else if (calificacion >= 70) {
+            letra = 'C';
+        } else if (calificacion >= 60) {
+            letra = 'D';
+        } else {
+            letra = 'F';
+        }
+        
+        System.out.println("Calificacion en letra: " + letra);
+        
+        if (calificacion >= 70) {
+            System.out.println("El estudiante APROBO");
+        } else {
+            System.out.println("El estudiante REPROBO");
+        }
         
     }
 }
